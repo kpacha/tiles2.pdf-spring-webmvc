@@ -1,7 +1,7 @@
 tiles2.pdf-spring-webmvc
 ========================
 
-Simple on the fly pdf generator from tiles2-generated views
+Simple on the fly pdf generator from tiles2-generated views. Use with out the [smartview-spring-webmvc](https://github.com/kpacha/smartview-spring-webmvc) package in order to allow the streaming of already stored pdf files.
 
 Maven dependency
 -----------------
@@ -19,8 +19,7 @@ Maven dependency
 Simple configuration
 -----------------
 
-        <bean
-                class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
                 <property name="order" value="1" />
                 <property name="mediaTypes">
                         <map>
